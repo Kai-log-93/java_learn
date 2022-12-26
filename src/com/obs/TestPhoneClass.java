@@ -1,14 +1,14 @@
 package com.obs;
 
-public class Main {
+public class TestPhoneClass {
     public static void main(String[] args) {
         System.out.println("Hello world!");
         //创建手机对象
-        Phone p = new Phone();
+        PhoneClass p = new PhoneClass();
         p.brand = "Mi";
-        p.price = 999.9;
+        p.setPrice(999.9);
         System.out.println(p.brand);
-        System.out.println(p.price);
+        System.out.println(p.getPrice());
         p.call();
         p.game();
     }
